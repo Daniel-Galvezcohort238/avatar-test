@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { Avatar, AvatarFallback, AvatarImage } from "./avatar"
+import AvatarComponent from './avatar/avatar-component'
 
 
 function App() {
@@ -30,11 +30,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <Avatar>
-        <AvatarImage src="https://github.com/shadcn.png" />
-        <AvatarFallback>CN</AvatarFallback>
-      </Avatar>
-
+      <AvatarComponent />
     </>
   )
 }
